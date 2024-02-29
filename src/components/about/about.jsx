@@ -33,11 +33,16 @@ const About = () => {
               <h5>Projects</h5>
             </article>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, consequatur minima quae,
-            suscipit delectus corporis dolore voluptate, provident aliquid consectetur eveniet. 
-            Doloremque eveniet quia alias eius exercitationem nam consequatur repudiandae!
-          </p>
+          <div className='about__information'>
+            <ul>
+              <li><strong>8+ years </strong> in web development & IT analysis</li>
+              <li>Front-end specialist: <strong>React.js</strong>, TypeScript, Material UI</li>
+              <li>Backend savvy: ASP.NET Core, SQL databases</li>
+              <li><strong>Strategic project management</strong> & ERP solutions</li>
+              <li>Proven track record in <strong> data warehousing </strong>& normalization</li>
+              <li>Innovative problem-solver, continuous learner</li>
+            </ul>
+          </div>
           <a href="#contact" className='btn btn-primary'>Contact</a>
         </div>
       </div>
