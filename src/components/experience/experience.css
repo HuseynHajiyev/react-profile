@@ -31,7 +31,13 @@
 .experience__details {
     display: flex;
     gap: 1rem;
+    padding: 2dvh 0 0 2dvh;
 }
+.experience__details h5 {
+    color: var(--color-primary);
+    font-size: smaller;
+}
+    
 
 .experience__details-icon {
     margin-top: 6px;

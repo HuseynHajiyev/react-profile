@@ -10,91 +10,64 @@ const Services = () => {
       <div className="container services__container">
         <article className="service">
           <div className="service__head">
-            <h3>UI/UX Desing</h3>
+            <h3>Frontend Development Services</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Custom website and web application development using React.js and Next.js.</p>
             </li>
             <li>
               <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Responsive UI/UX design, ensuring cross-platform compatibility and user engagement.</p>
             </li>
             <li>
               <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Front-end optimization for performance and SEO.</p>
             </li>
-            <li>
-              <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
-            </li>
-            <li>
-              <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
-            </li> 
           </ul>
         </article>
-        {/* UI/UX */}
         <article className="service">
           <div className="service__head">
-            <h3>Web Development</h3>
+            <h3>Backend & Database Solutions</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>ASP.NET Core backend development for robust server-side logic.</p>
             </li>
             <li>
               <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Database design and management with SQL, ensuring data integrity and efficient access.</p>
             </li>
             <li>
               <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Implementing secure RESTful APIs for seamless frontend-backend integration.</p>
             </li>
-            <li>
-              <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
-            </li>
-            <li>
-              <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
-            </li> 
           </ul>
         </article>
-        {/* End Of Web Development */}
         <article className="service">
           <div className="service__head">
-            <h3>Content Creation</h3>
+            <h3>Project Management & Strategy:</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Analyzing business requirements to deliver tailored IT solutions.</p>
             </li>
             <li>
               <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Agile project management, from conceptualization to deployment.</p>
             </li>
             <li>
               <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Strategic planning for system architecture and long-term IT infrastructure.</p>
             </li>
-            <li>
-              <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
-            </li>
-            <li>
-              <BsCheckLg className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet.</p>
-            </li> 
           </ul>
         </article>
-        {/* End Of Content Creation */}
       </div>
     </section>
   )

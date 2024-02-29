@@ -1,8 +1,9 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/KanakuUpper.png'
-import IMG2 from '../../assets/rentACar.png'
-import IMG3 from '../../assets/cLang.png'
+import IMG1 from '../../assets/ParticiplePlus.png'
+import IMG2 from '../../assets/KanakuUpper.png'
+import IMG3 from '../../assets/food_city_az_logo.jpeg'
+import IMG4 from '../../assets/AVF.png'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay, Navigation, Keyboard, Pagination } from "swiper";
@@ -24,23 +25,32 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Kanaku: A Tour Guide RoR/StimulusJs",
-    github: "https://github.com/HuseynHajiyev/kanaku",
-    demo: "https://troopl.com/hhajiyev/kanaku"
+    title: "Participle+: An e-commerce React App - Developer",
+    type: "Web Dev Public",
+    github: "https://github.com/HuseynHajiyev/ProfileCommerce",
+    demo: "https://participle-plus.vercel.app/"
   },
   {
     id: 2,
     image: IMG2,
-    title: "Kanaku RentACar RoR/StimulusJs",
-    github: "https://github.com/HuseynHajiyev/rent-a-car",
-    demo: "https://troopl.com/hhajiyev/rent-a-car"
+    title: "Kanaku: A Tour Guide RoR App - Sr. Developer team of 4",
+    type: "Web Dev Public",
+    github: "https://github.com/HuseynHajiyev/kanaku",
+    demo: "https://troopl.com/hhajiyev/kanaku"
   },
   {
     id: 3,
     image: IMG3,
-    title: "A programming course completed in C",
-    github: "https://github.com/HuseynHajiyev/c-programming",
-    demo: "#"
+    title: "Foodcity Agropark ERP system Deploymen - PM",
+    type: "Project Management",
+    demo: "https://www.foodcity.az/"
+  },
+  {
+    id: 4,
+    image: IMG4,
+    title: "Azerbaijan Volleyball Federation ERP deployemt - PM",
+    type: "Project Management",
+    demo: "https://avf.az/az/home",
   },
 ]
 
@@ -59,7 +69,6 @@ const Portfolio = () => {
     observeParents: true,
     keyboard: { enabled: true },
     pagination: true,
-    autoplay: true
   };
   return (
     <section id='portfolio' className='panorama-slider'>
@@ -68,17 +77,23 @@ const Portfolio = () => {
 
       <Swiper  {...swiperParameters} className="container portfolio__container">
         {
-          data.map(({id, image, title, github, demo}, index) => {
+          data.map(({id, image, title, github, type, demo}, index) => {
             return(
               <SwiperSlide className="portfolio__item" key={index}>
                 <div className="portfolio__item-img">
                   <img src={image} alt={title} />
                 </div>
                 <h3>{title}</h3>
-                <div className="portfolio__item-cta">
-                  <a href={github} className='btn' target="_blank">Github</a>
-                  <a href={demo} className='btn btn-primary' target="_blank">Demo</a>
-                </div>
+                {type === "Project Management" ? (
+                  <div className="portfolio__item-cta">
+                    <a href={demo} className='btn btn-primary' target="_blank">Demo</a>
+                  </div>
+                ) : (
+                  <div className="portfolio__item-cta">
+                    <a href={github} className='btn' target="_blank">Github</a>
+                    <a href={demo} className='btn btn-primary' target="_blank">Demo</a>
+                  </div>
+                )}
               </SwiperSlide>
             )
           }) 

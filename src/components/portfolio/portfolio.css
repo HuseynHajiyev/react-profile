@@ -11,12 +11,26 @@
 
 .portfolio__item-img {
     /* border-radius: 1.5rem; */
+    position: relative;
     width: 100%;
+    padding-top: 50vh;
     /* aspect-ratio: 1/1; */
     overflow: hidden;
     border-radius: 1rem;
     margin: 0 auto 1rem;
     border: 0.1rem solid var(--color-primary-variant);
+}
+
+.portfolio__item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 300ms;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top top;
+    transition: var(--transition);
 }
 
 .portfolio__item h3 {
