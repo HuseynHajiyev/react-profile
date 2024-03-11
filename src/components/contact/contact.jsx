@@ -45,7 +45,7 @@ const Contact = () => {
           <a href="https://api.whatsapp.com/send?phone=994513888188" target='_blank' className="contact__option">
             <SiWhatsapp className='contact__option-icon'/>
             <h4>Whatsapp</h4>
-            <h5>+994513888188</h5>
+            <h5>Start Messaging</h5>
           </a>
         </div>
         <form ref={form} onSubmit={sendEmail}>
